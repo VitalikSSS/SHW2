@@ -85,9 +85,9 @@ class Program
                     Console.WriteLine($"{process.Id}\t{process.ProcessName}");
                 }
             }
-            catch
+            catch(Exception)
             {
-               
+               Console.WriteLine($"Не вдалося отримати інформацію про процес з ID {process.Id}");
             }
         }
     }
